@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>AlgoCourses Grades</title>
+  <style>
+    body { width: 260px; margin: 0; padding: 14px; font: 14px/1.4 system-ui, sans-serif; }
+    label { display: block; margin-bottom: 8px; }
+    input { box-sizing: border-box; width: 100%; padding: 6px 8px; margin-top: 3px; }
+    button { padding: 6px 14px; cursor: pointer; }
+    .hidden { display: none; }
+    #greeting { margin: 0 0 10px; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <form id="form" class="hidden">
+    <label>Фамилия <input id="lastName" autocomplete="off" required></label>
+    <label>Имя <input id="firstName" autocomplete="off" required></label>
+    <button type="submit">Сохранить</button>
+  </form>
+  <div id="view" class="hidden">
+    <p id="greeting"></p>
+    <button id="edit" type="button">Изменить</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
